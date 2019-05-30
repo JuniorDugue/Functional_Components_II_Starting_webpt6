@@ -1,2 +1,0 @@
-# Functional_Components_II_Starting_webpt6
-Created with CodeSandbox
