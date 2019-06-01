@@ -1,11 +1,12 @@
 import React from "react";
 
-function Student() {
+function Student(props) {
+  // console.log(props);
   return (
-  <div>
-    Student
-  </div>
-);
+    <div className="sstudent-card">
+      <h1>Student</h1>
+    </div>
+  );
 }
 
 export default Student;
