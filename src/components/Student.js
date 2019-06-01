@@ -22,6 +22,8 @@ function Student(props) {
         so we have to pick apart the
         object
       */}
+    <div className="sstudent-card">
+      <h1>Student</h1>
     </div>
   );
 }
