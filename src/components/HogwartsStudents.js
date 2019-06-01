@@ -52,6 +52,10 @@ function HogwartsStudents() {
       <h1>Hogwarts Students:</h1>
       <div className="class-list">
         <Student hogwartStudent={HarryProfile} />
+        <Student hogwartStudent={RonProfile} />
+        <Student hogwartStudent={HermioneProfile} />
+        <Student hogwartStudent={DracoProfile} />
+
         {/* 
         <Student hogwartStudent=""/>  
         ***if you're passing a string, use quotes, if not use curly braces which is 
