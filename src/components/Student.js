@@ -4,17 +4,17 @@ function Student(props) {
   // console.log(props);
   return (
     <div className="student-card">
-      <img src={props.hogwartStudent.img} />
+      <img src={props.hogwartsStudent.img} alt={props.hogwartsStudent.name} />
       <div className="student-info">
-        <h3>{props.hogwartStudent.name}</h3>
+        <h3>{props.hogwartsStudent.name}</h3>
         <p>
-          <strong>Identity:{props.hogwartStudent.identity}</strong>
+          <strong>Identity:{props.hogwartsStudent.identity}</strong>
         </p>
         <p>
-          <strong>Age:{props.hogwartStudent.age}</strong>
+          <strong>Age:{props.hogwartsStudent.age}</strong>
         </p>
         <p>
-          <strong>Bestfriend:{props.hogwartStudent.bestFriend}</strong>
+          <strong>Bestfriend:{props.hogwartsStudent.bestFriend}</strong>
         </p>
         {/* 
         <h3>{}</h3>
@@ -38,6 +38,9 @@ function Student(props) {
         strings, you'll access via {}, e.g.
         <img src={} />
         <img src={props.hogwartStudent.img} />
+        and to add alt tags
+        <img src={props.hogwartStudent.img} 
+        alt={props.hogwartStudent.name} />
       */}
       </div>
     </div>
