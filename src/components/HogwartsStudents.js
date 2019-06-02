@@ -138,6 +138,63 @@ then using that hogwartsStudent to pass the data in the child component e.g.
   
 let nums = [1,2,3];
 
+const newStudentsArray = students.map((studentProfile, index) => {
+  return <Student hogwartsStudent={studentProfile} />;
+});
+console.log(newStudentsArray);
+// you'll see 4 components in the console
+
+{
+  /* 1st step
+  const newStudentsArray = students.map( () => {
+
+  });
+*/
+}
+
+{
+  /*2nd step 
+  const newStudentsArray = students.map( (studentProfile, index) => {
+  return <Student hogwartsStudent={studentProfile}/>
+});  
+*/
+}
+
+{
+  /*3rd step
+  const newStudentsArray = students.map((studentProfile, index) => {
+  return <Student hogwartsStudent={studentProfile} />;
+});
+
+then using that hogwartsStudent to pass the data in the child component e.g. 
+    <img src={props.hogwartsStudent.img} alt={props.hogwartsStudent.name} />
+      <div className="student-info">
+        <h3>{props.hogwartsStudent.name}</h3>
+        <p>
+          <strong>Identity:{props.hogwartsStudent.identity}</strong>
+        </p>
+        <p>
+          <strong>Age:{props.hogwartsStudent.age}</strong>
+        </p>
+        <p>
+          <strong>Bestfriend:{props.hogwartsStudent.bestFriend}</strong>
+        </p>
+
+        into the parent container e.g.
+      <div>
+        <h1>Hogwarts Students:</h1>
+        <div className="class-list">
+          {newStudentsArray}
+        </div>
+      </div>
+*/
+}
+
+{
+  /* example of how map function works
+  
+let nums = [1,2,3];
+
 let newArraysofNums = nums.map( (num)=>{
   return num + 1;
 });
